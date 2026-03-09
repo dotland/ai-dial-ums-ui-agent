@@ -3,13 +3,14 @@
 **Create Production ready Agent with Tool use pattern and MCP**
 
 In this task you will need to implement an Agent with classical Tool use patten and connect to several MCP servers:
+
 - We need to support streaming and non-streaming flow
 - Will use UI chat with response streaming
 - All the conversations must be stored in the Redis storage
 - As tools, we will use tools from 3 different MCP Servers
-    - UMS MCP: Server that works with UMS Service, we will run it locally from docker-compose
-    - Fetch MCP: Remote Server that has tools to fetch WEB content
-    - DucDuckGo: Will run it locally (with application start in docker container), provides with WEB Search capabilities
+  - UMS MCP: Server that works with UMS Service, we will run it locally from docker-compose
+  - Fetch MCP: Remote Server that has tools to fetch WEB content
+  - DucDuckGo: Will run it locally (with application start in docker container), provides with WEB Search capabilities
 - Auth will be skipped in this task
 
 ## 📋 Requirements
@@ -46,7 +47,7 @@ In this task you will need to implement an Agent with classical Tool use patten 
 
 ## 🏗️ Architecture
 
-```
+```txt
 ├── 📂 agent/
 │   │
 │   ├── 📂 clients/
